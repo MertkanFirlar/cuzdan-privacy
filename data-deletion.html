@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Veri Silme — Cüzdan AI: Bütçe & Birikim</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <article class="doc">
+      <a href="index.html" class="doc-back">← Ana sayfa</a>
+      <h1>Veri Silme</h1>
+      <p class="lead">
+        Cüzdan AI: Bütçe &amp; Birikim uygulamasında <strong>verinin tamamı senin
+        telefonunda kalır</strong>. Bizim sunucumuzda hesabın yok, üyelik yok, parola
+        yok. Bu sebeple "verinizi silin" talebi için bize ulaşmana gerek
+        kalmaz — tek dokunuşla kendin silebilirsin.
+      </p>
+
+      <h2>1. Nasıl silerim?</h2>
+      <p>Telefon üzerinden iki yolla silebilirsin:</p>
+      <ul>
+        <li>
+          <strong>Uygulama içinden (önerilen):</strong>
+          <ol>
+            <li>Cüzdan AI uygulamasını aç</li>
+            <li>Sağ üst köşedeki <strong>⚙ Ayarlar</strong> simgesine bas</li>
+            <li>Aşağı kaydır, <strong>VERİ</strong> bölümünü bul</li>
+            <li><strong>"Tüm verileri sil"</strong> seçeneğine bas</li>
+            <li>"Sil" butonuyla onayla</li>
+          </ol>
+          Uygulamadaki tüm finansal kayıtların ve ayarların kalıcı olarak silinir.
+          Bu işlem geri alınamaz.
+        </li>
+        <li>
+          <strong>Android sistem ayarlarından:</strong>
+          <ol>
+            <li>Telefon Ayarları → Uygulamalar → Cüzdan AI</li>
+            <li>"Depolama" → "Verileri sil"</li>
+          </ol>
+          Aynı sonucu verir, uygulamayı baştan kurmuş gibi olur.
+        </li>
+      </ul>
+
+      <h2>2. Hangi veriler silinir?</h2>
+      <p>"Tüm verileri sil" işlemi şunların hepsini siler:</p>
+      <ul>
+        <li>Aylık gelirin, sabit giderlerin, abonelikler</li>
+        <li>Kredi kartların ve borç bilgileri</li>
+        <li>Harcama ve nakit kayıtların</li>
+        <li>Birikimlerin (TL mevduatı, döviz, altın, kripto, hisse)</li>
+        <li>AI brifing önbelleği ve sohbet kotası kayıtları</li>
+        <li>Onboarding bilgilerin (isim, hedef, vs.)</li>
+        <li>Tema ve uygulama tercihlerin</li>
+        <li>Hata kayıtları</li>
+      </ul>
+
+      <h2>3. Sunucuda saklanan veri var mı?</h2>
+      <p>
+        <strong>HAYIR.</strong> Cüzdan AI'ın sunucusu yoktur. Üçüncü taraf
+        servislerle ilişkimiz şöyle:
+      </p>
+      <ul>
+        <li>
+          <strong>Cloudflare Workers AI</strong> — AI Asistan'ı kullandığında
+          finansal özet anonim olarak iletilir, Cloudflare politikası gereği
+          istek bittikten sonra <strong>saklanmaz</strong>. Eğitim için
+          kullanılmaz.
+        </li>
+        <li>
+          <strong>TCMB / goldprice.org / CoinGecko</strong> — Birikim ekranı
+          için kur sorgusu gönderilir, istek gövdesinde
+          <strong>kişisel veri yoktur</strong> (sadece "USD/TRY kuru ne?"
+          benzeri sorgu).
+        </li>
+        <li>
+          <strong>Google AdMob</strong> — Reklam gösterimi için Google'ın
+          standart reklam kimliği (AAID) kullanılır. Reklam kimliğini Android
+          ayarlarından sıfırlayabilir veya kişiselleştirilmiş reklamı
+          kapatabilirsin (<em>Ayarlar → Google → Reklamlar</em>).
+        </li>
+      </ul>
+      <p>
+        Yukarıdaki üçüncü taraf servislerden veri silmek istersen ilgili
+        sağlayıcının kendi politikası geçerlidir. Cüzdan AI'ın bu kayıtlara
+        erişimi yoktur.
+      </p>
+
+      <h2>4. Silme süresi</h2>
+      <p>
+        "Tüm verileri sil" butonu <strong>anlık</strong> çalışır — telefon
+        üzerinde MMKV veri tabanından kayıtlar saniye içinde silinir. Bekleme
+        süresi yoktur.
+      </p>
+      <p>
+        Cloudflare AI tarafına gönderilen geçmiş istekler sayılı saniye sonra
+        Cloudflare'den otomatik silinir; bizim ek saklama süremiz yoktur.
+      </p>
+
+      <h2>5. Sorularınız için</h2>
+      <p>
+        Veri silme veya gizlilik ile ilgili sorularınız için:
+        <a href="mailto:mermertmermert404@gmail.com">mermertmermert404@gmail.com</a>
+      </p>
+      <p>
+        Geliştirici: Mertkan Firlar — Cüzdan AI: Bütçe &amp; Birikim
+      </p>
+
+      <p class="updated">Yürürlük tarihi: 2 Mayıs 2026</p>
+    </article>
+  </main>
+</body>
+</html>
