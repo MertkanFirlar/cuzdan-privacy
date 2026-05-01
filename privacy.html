@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gizlilik Politikası — Cüzdan AI: Bütçe & Birikim</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <article class="doc">
+      <a href="index.html" class="doc-back">← Ana sayfa</a>
+      <h1>Gizlilik Politikası</h1>
+      <p class="lead">
+        Cüzdan AI: Bütçe &amp; Birikim, finansal verilerini sahibinin rızası dışında hiçbir
+        şekilde başka bir tarafla paylaşmaz. Aşağıda hangi verinin nerede tutulduğunu,
+        nereye gönderildiğini ve nasıl sileceğini bulabilirsin.
+      </p>
+
+      <h2>1. Toplanan Veri</h2>
+      <ul>
+        <li>Aylık gelir, sabit giderler, abonelikler, kredi kartı borç bilgileri ve
+          yaptığın harcamalar — bunların tamamı sadece <strong>TELEFONUNDA</strong>
+          tutulur (MMKV şifreli yerel veri tabanında).</li>
+        <li>Bizim sunucumuzda hesabın yok, üyelik yok, parola yok, e-posta yok.</li>
+      </ul>
+
+      <h2>2. AI Asistan ve Veri Akışı</h2>
+      <p>
+        AI Asistan özelliğini kullandığında, finansal verilerinin <strong>ÖZETLENMİŞ</strong>
+        ve <strong>KİŞİSEL TANIMLAYICILARDAN ARINDIRILMIŞ</strong> bir hâli (toplam tutarlar,
+        abonelik adları, hedef gibi) Cloudflare Workers AI servisine bir istek olarak
+        gönderilir. Cloudflare bu isteği işler ve Türkçe yanıtı döner. Cloudflare politikası
+        gereği veri eğitim için saklanmaz; bizim de bunları log'lama bir altyapımız yoktur.
+      </p>
+      <p>
+        <strong>ADIN — KVKK kapsamında kişisel veri sayılır.</strong> Adın varsayılan olarak
+        AI sunucusuna gönderilmez. Ayarlar → AI Asistan → "AI ismimle hitap etsin"
+        toggle'ını açarsan, sadece o andan itibaren her chat/brifing isteğinde adın istek
+        gövdesinde Cloudflare'e iletilir. İstediğin zaman toggle'ı kapatınca durur.
+      </p>
+      <p>AI özelliğini kullanmazsan hiçbir veri telefon dışına çıkmaz.</p>
+
+      <h2>3. Reklam ve Analitik</h2>
+      <p>
+        Ücretsiz sürümde Google AdMob banner reklamları gösterilir. Bu reklamlar Google'ın
+        standart gizlilik kuralları çerçevesinde çalışır; biz reklam profili oluşturmaz veya
+        kişisel tanımlayıcı (e-posta, ad, telefon) toplamayız.
+      </p>
+
+      <h2>4. Birikim Modülü ve Üçüncü Taraf Veri Kaynakları</h2>
+      <p>
+        Birikimler (Birikimlerim) özelliği, sahip olduğun döviz/altın/kripto kalemlerinin TL
+        karşılığını gösterebilmek için aşağıdaki <strong>kamuya açık</strong> fiyat
+        kaynaklarına günde bir kez kur sorgusu gönderir:
+      </p>
+      <ul>
+        <li><strong>TCMB</strong> (Türkiye Cumhuriyet Merkez Bankası) — resmi günlük döviz kurları</li>
+        <li><strong>goldprice.org</strong> — gram altın fiyatı</li>
+        <li><strong>CoinGecko</strong> — kripto para birimleri TL kuru</li>
+      </ul>
+      <p>
+        Bu istekler yalnızca kur değerlerini öğrenmek içindir; istek gövdesinde
+        <strong>KİMLİĞİN, BAKİYELERİN veya HARCAMA VERİN BULUNMAZ</strong>. Sadece
+        "USD/TRY kuru nedir?" sorusuna eşdeğer bir HTTP isteğidir. Bu kaynakların
+        kendi gizlilik politikaları geçerlidir; ancak biz onlara hiçbir kişisel/finansal
+        veri iletmiyoruz.
+      </p>
+      <p>
+        BIST hisse ve TEFAS yatırım fonları için canlı kotalar yoktur; mevcut TL değerini
+        sen manuel girersin.
+      </p>
+
+      <h2>5. Verini Silme</h2>
+      <p>
+        Uygulama Ayarlar → "Tüm verileri sil" seçeneğiyle telefonundaki tüm finansal
+        kayıtları kalıcı olarak silebilirsin. Cloudflare tarafında sayılı saniye sonra
+        unutulan istekler dışında saklanmış veri yoktur, bu sebeple ayrı bir silme talebi
+        gerekmez.
+      </p>
+
+      <h2>6. Çocukların Verisi</h2>
+      <p>
+        Cüzdan AI 13 yaş altı çocuklara yönelik bir uygulama değildir ve çocuklardan
+        bilerek veri toplamaz.
+      </p>
+
+      <h2>7. Değişiklikler</h2>
+      <p>
+        Politikada değişiklik olursa uygulama içinde bildirim ile haber veririz.
+        Mevcut sürüm: 1 Mayıs 2026.
+      </p>
+
+      <h2>8. İletişim</h2>
+      <p>Soruların için: <a href="mailto:mermertmermert404@gmail.com">mermertmermert404@gmail.com</a></p>
+
+      <p class="updated">Yürürlük tarihi: 1 Mayıs 2026</p>
+    </article>
+  </main>
+</body>
+</html>
